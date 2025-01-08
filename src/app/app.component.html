@@ -1,0 +1,11 @@
+<div class="todo-dashboard">
+  <header class="header">
+    <h1>TODO Dashboard</h1>
+  </header>
+  @if(store.loading()){
+    <mat-spinner></mat-spinner>
+  }
+  @else {
+    <todos-list/>
+  }
+</div>
